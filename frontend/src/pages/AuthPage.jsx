@@ -20,7 +20,6 @@ export default function AuthPage() {
       <div className={styles.card}>
         <div className={styles.header}>
           <h1 className={styles.title}>PREVUE.AI</h1>
-          <p className={styles.subtitle}>Practice interviews with AI</p>
         </div>
 
         {isLogin ? <LoginForm onSuccess={handleAuthSuccess} /> : <SignUpForm onSuccess={handleAuthSuccess} />}
